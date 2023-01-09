@@ -93,7 +93,7 @@ const computeControlParameters = (motor, currLoop, speedLoop) => {
 };
 
 //Initialize Motor Parameters
-const motorBorg = new MotorParameters(
+const motorTest = new MotorParameters(
   1.09,
   0.0124,
   0.0124,
@@ -105,4 +105,4 @@ const motorBorg = new MotorParameters(
 const currLoop = new ControlParameters(100 * 10 ** -6, 500 * 10 ** -6);
 const speedLoop = new ControlParameters(1 * 10 ** -3, 5 * 10 ** -3);
 
-console.log(computeControlParameters(motorBorg, currLoop, speedLoop));
+console.log(computeControlParameters(motorTest, currLoop, speedLoop));
